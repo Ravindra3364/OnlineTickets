@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blues"
+    tools:context=".payment">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode of Payment :-"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/texttis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg1">
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm"
+                android:onClick="paymentButton"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="paymentButton"
+                android:text="PhonePe" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GooglePay"
+                android:onClick="paymentButton"/>
+
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="DebitCard"
+                android:onClick="paymentButton"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/texttis"
+        android:layout_below="@id/head">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/paytm"
+            android:id="@+id/iv1"></ImageView>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv1"
+            android:id="@+id/iv2"
+            android:src="@drawable/phonepe"
+            android:layout_marginTop="10dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv2"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/gpay"></ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Your payment mode is:-"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvs1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bs"
+            android:layout_below="@id/tvs1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:layout_marginLeft="10dp"
+            android:text="Make Payment"
+            android:onClick="paymentButton"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

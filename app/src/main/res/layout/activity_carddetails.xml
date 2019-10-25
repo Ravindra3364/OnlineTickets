@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carddetails">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Card Details:-"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/t1"
+        android:background="@drawable/decent"
+        android:gravity="center"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+       android:id="@+id/e1"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="50dp"
+        android:hint="Name On Card"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/e2"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:hint="Enter card number"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e2"
+        android:id="@+id/e3"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:hint="Enter card number"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e3"
+        android:id="@+id/e4"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:hint="Expiration Date"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e4"
+        android:id="@+id/e5"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:hint="CVV"
+        android:gravity="center"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/e5"
+        android:layout_marginTop="276dp"
+        android:background="@color/green"
+        android:textColor="#ffffff"
+        android:text="Make Payment"
+        android:textStyle="bold"></Button>
+
+
+</RelativeLayout>

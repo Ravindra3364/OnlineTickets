@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl1"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location:- Tirupati"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/tvl1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl1"
+            android:text="Carnival Paras"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvl2"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl2"
+            android:text="Moviename: Mission Mangal"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvl3"></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl3"
+            android:layout_marginBottom="60dp"
+            android:text="11:50AM"
+            android:id="@+id/bl1"
+            android:onClick="siting"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl3"
+            android:layout_toRightOf="@id/bl1"
+            android:layout_marginBottom="60dp"
+            android:text="01:30AM"
+            android:id="@+id/bl2"
+            android:onClick="siting"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl3"
+            android:layout_toRightOf="@id/bl2"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/bl3"
+            android:text="04:15PM"
+            android:onClick="siting"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl3"
+            android:layout_marginBottom="60dp"
+            android:text="06:30PM"
+            android:layout_toRightOf="@id/bl3"
+            android:onClick="siting"
+            ></Button>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Sri Venkateshwara Cineplex"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvl12"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl12"
+            android:text="Moviename: Mission Mangal"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvl13"></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl13"
+            android:layout_marginBottom="60dp"
+            android:text="12:30PM"
+            android:id="@+id/bl11"
+            android:onClick="siting"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl13"
+            android:layout_toRightOf="@id/bl11"
+            android:layout_marginBottom="60dp"
+            android:text="01:05PM"
+            android:id="@+id/bl12"
+            android:onClick="siting"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl13"
+            android:layout_toRightOf="@id/bl12"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/bl13"
+            android:text="04:10PM"
+            android:onClick="siting"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvl13"
+            android:layout_marginBottom="60dp"
+            android:text="07:15PM"
+            android:layout_toRightOf="@id/bl13"
+            android:onClick="siting"
+            ></Button>
+
+
+        <ImageView
+            android:layout_width="560dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/missionmangal"
+            android:layout_below="@id/bl11"
+            ></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
